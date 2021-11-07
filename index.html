@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/food.css" />
+    <link
+      rel="stylesheet"
+      href="https:////pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>food web page</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="nav-bar">
+        <div class="nav-logo">
+          <h1>logo</h1>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <i class="fas fa-times" onclick="closeMenu()"></i>
+          <ul>
+            <a href="#"><li>home</li></a>
+            <a href="#"><li>about</li></a>
+            <a href="#"><li>recipe</li></a>
+          </ul>
+          <button type="button" class="btn">sign up</button>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </div>
+      <div class="banner-title">
+        <h1>
+          food
+          <span>
+            does`t have <br />
+            religion,
+          </span>
+          it is a religion
+        </h1>
+        <button type="button" class="btn">Explore</button>
+      </div>
+      <div class="vertical-bar">
+        <div class="search-icon">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="social-icon">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest"></i>
+        </div>
+      </div>
+      <div class="notification">
+        <div class="contents">
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            odit.</small
+          >
+          <p><a href="#">prev</a><a href="#">next</a></p>
+        </div>
+        <div class="notification-img">
+          <img
+            src="/css/IMAGES/brooke-lark-HlNcigvUi4Q-unsplash.jpg"
+            alt="food"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      var show = document.getElementById("nav-links");
+      function showMenu() {
+        show.style.right = "0";
+      }
+      function closeMenu() {
+        show.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
